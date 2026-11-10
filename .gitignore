@@ -1,0 +1,144 @@
+# ── Secrets & env ─────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials.json
+*.tfvars
+!example.tfvars
+.vscode
+
+# ── Python ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+.python-version
+
+# Testing, coverage, linting, typing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.ruff_cache/
+
+# ── Node / JS / TS ────────────────────────────
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.next/
+.nuxt/
+.turbo/
+.parcel-cache/
+.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+
+# ── Java / Spring Boot ────────────────────────
+target/
+.gradle/
+out/
+*.class
+*.jar
+*.war
+!gradle/wrapper/gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+HELP.md
+
+# ── Jupyter ───────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ── AI / ML artifacts ─────────────────────────
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.gguf
+*.bin
+models/
+checkpoints/
+
+# Experiment tracking
+wandb/
+mlruns/
+runs/
+lightning_logs/
+.cache/
+.huggingface/
+
+# Datasets and local vector stores (keep tiny samples via !data/sample/)
+data/
+datasets/
+*.parquet
+*.sqlite
+*.sqlite3
+*.db
+chroma/
+faiss_index/
+!data/sample/
+
+# ── Infra ─────────────────────────────────────
+.terraform/
+*.tfstate
+*.tfstate.*
+docker-compose.override.yml
+.kube/
+
+# ── IDEs & editors ────────────────────────────
+.idea/
+*.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# ── Logs & temp ───────────────────────────────
+*.log
+logs/
+*.tmp
+*.bak
+*.orig
+.tmp/
+tmp/
